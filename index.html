@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arriendo Corp | Soluciones Legales y Protección de Activos Corporativos</title>
-<meta name="description" content="Consultoría jurídica integral para la protección, estructuración y optimización de activos corporativos y patrimoniales. Compliance, contratos e inversiones.">
+<title>Arriendo Corp | Infraestructura y Equipamiento para Exportadores</title>
+<meta name="description" content="Arrendamiento de infraestructura logística, flotas, maquinaria, tecnología y respaldo energético para empresas exportadoras.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --accent:#C79A4A;
-  --accent-dark:#A9792D;
-  --dark:#0A244A;
-  --darker:#03142F;
-  --ink:#0A244A;
+  --accent:#B68734;
+  --accent-dark:#37371F;
+  --dark:#021E3F;
+  --darker:#021E3F;
+  --ink:#021E3F;
   --gray:#666666;
   --line:#D9D9D9;
   --soft:#F5F5F5;
   --white:#ffffff;
-  --title:'Cormorant Garamond',serif;
+  --title:'Manrope',sans-serif;
   --body:'Montserrat',sans-serif;
   --radius:14px;
   --shadow:0 18px 50px -20px rgba(3,20,47,.42);
@@ -40,7 +40,7 @@ h1,h2,h3{font-family:var(--title);font-weight:600;line-height:1.12;color:var(--i
 .sec-head p{color:var(--gray)}
 .btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--body);font-weight:600;font-size:.95rem;padding:14px 28px;border-radius:50px;cursor:pointer;border:2px solid transparent;transition:.25s;white-space:nowrap}
 .btn-primary{background:var(--accent);color:var(--darker)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px -10px rgba(199,154,74,.7)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px -10px rgba(182,135,52,.7)}
 .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .btn-ghost:hover{background:#fff;color:var(--darker)}
 .btn-dark{background:var(--dark);color:#fff}
@@ -49,7 +49,7 @@ h1,h2,h3{font-family:var(--title);font-weight:600;line-height:1.12;color:var(--i
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:.3s}
 .nav{display:flex;align-items:center;justify-content:space-between;height:86px}
 .brand{display:flex;align-items:center;gap:.7rem;font-weight:700}
-.brand img{height:95px;width:auto;border-radius:10px}
+.brand img{height:132px;width:auto;max-width:230px;object-fit:contain}
 .menu{display:flex;align-items:center;gap:34px;list-style:none}
 .menu a{font-weight:500;font-size:.95rem;color:var(--ink);transition:.2s}
 .menu a:hover{color:var(--accent-dark)}
@@ -81,6 +81,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:-50px;position:relative;z-index:5}
 .stat{background:#fff;border-radius:var(--radius);padding:30px 24px;text-align:center;box-shadow:var(--shadow);border-top:4px solid var(--accent)}
 .stat .num{font-family:var(--title);font-size:2.8rem;font-weight:700;color:var(--accent-dark);line-height:1}
+.stat .key{font-family:var(--title);font-size:1.7rem;font-weight:800;color:var(--dark);line-height:1.1}
 .stat .lbl{margin-top:6px;color:var(--gray);font-weight:500;font-size:.92rem}
 
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
@@ -99,7 +100,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .why h2{color:#fff;font-size:clamp(2.2rem,4.4vw,3rem);margin:12px 0 18px}
 .why p.lead{color:rgba(255,255,255,.8);margin-bottom:28px}
 .feat{display:flex;gap:16px;margin-bottom:22px}
-.feat .fi{flex:0 0 46px;height:46px;border-radius:12px;background:rgba(199,154,74,.18);display:flex;align-items:center;justify-content:center}
+.feat .fi{flex:0 0 46px;height:46px;border-radius:12px;background:rgba(182,135,52,.18);display:flex;align-items:center;justify-content:center}
 .feat .fi svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.8}
 .feat h4{font-family:var(--body);font-weight:600;margin-bottom:3px}
 .feat p{color:rgba(255,255,255,.7);font-size:.92rem}
@@ -181,12 +182,13 @@ footer ul a:hover{color:var(--accent)}
 <script type="application/ld+json">
 {
     "@context":  "https://schema.org",
-    "@type":  "LocalBusiness",
+    "@type":  "Organization",
     "@id":  "https://arriendocorp.org#localbusiness",
     "name":  "Arriendo Corp",
     "url":  "https://arriendocorp.org",
     "image":  "https://arriendocorp.org/assets/logo.png",
     "logo":  "https://arriendocorp.org/assets/logo.png",
+    "description":  "Arrendamiento de infraestructura pesada, equipamiento logístico y activos tecnológicos para empresas exportadoras.",
     "sameAs":  [
                    "https://www.facebook.com/arriendocorp/"
                ]
@@ -217,11 +219,11 @@ footer ul a:hover{color:var(--accent)}
     <ul class="menu" id="menu">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#nosotros">Ventajas</a></li>
       <li><a href="#contacto">Contáctanos</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="#contacto" class="btn btn-dark">Agenda tu cita</a>
+      <a href="#contacto" class="btn btn-dark">Solicitar propuesta</a>
       <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -230,17 +232,17 @@ footer ul a:hover{color:var(--accent)}
 <section class="hero" id="inicio">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">Soluciones Legales · Activos Corporativos</span>
-      <h1>Protege hoy lo que <span>construiste</span> para mañana</h1>
-      <p class="lead">En Arriendo Corp nos especializamos en la consultoría jurídica integral para la protección, estructuración y optimización de activos corporativos y patrimoniales.</p>
+      <span class="eyebrow">Infraestructura · Equipamiento · Exportación</span>
+      <h1>La capacidad que necesitas para <span>exportar más</span></h1>
+      <p class="lead">Arrendamos infraestructura pesada, equipamiento logístico y activos tecnológicos para que tu empresa escale operaciones sin inmovilizar capital ni asumir deuda bancaria tradicional.</p>
       <div class="hero-actions">
-        <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+        <a href="#contacto" class="btn btn-primary">Solicita una propuesta</a>
         <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
       </div>
       <div class="hero-chips">
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Seguridad jurídica</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Protección de activos</span>
-        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Compliance</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> CapEx a OpEx</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Escala flexible</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Continuidad operativa</span>
       </div>
     </div>
   </div>
@@ -249,10 +251,10 @@ footer ul a:hover{color:var(--accent)}
 <section class="stats">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat"><div class="num" data-count="14">0</div><div class="lbl">Años de experiencia</div></div>
-      <div class="stat"><div class="num" data-count="600">0</div><div class="lbl">Empresas asesoradas</div></div>
-      <div class="stat"><div class="num" data-count="2500">0</div><div class="lbl">Contratos blindados</div></div>
-      <div class="stat"><div class="num" data-count="100">0</div><div class="lbl">% Compromiso con tu caso</div></div>
+      <div class="stat"><div class="key">CapEx → OpEx</div><div class="lbl">Protege tu flujo de caja</div></div>
+      <div class="stat"><div class="key">Despliegue ágil</div><div class="lbl">Infraestructura lista en semanas</div></div>
+      <div class="stat"><div class="key">Escala modular</div><div class="lbl">Adáptate a picos de demanda</div></div>
+      <div class="stat"><div class="key">Operación continua</div><div class="lbl">Reduce paradas y pérdidas</div></div>
     </div>
   </div>
 </section>
@@ -261,16 +263,16 @@ footer ul a:hover{color:var(--accent)}
   <div class="container">
     <div class="sec-head">
       <span class="eyebrow">Nuestros servicios</span>
-      <h2>Consultoría jurídica integral para tu empresa</h2>
-      <p>Diseñamos estructuras legales sólidas que protegen tu patrimonio, blindan tus operaciones y aseguran el cumplimiento normativo.</p>
+      <h2>Activos productivos sin descapitalizar tu empresa</h2>
+      <p>Soluciones de arrendamiento corporativo para ampliar capacidad, acelerar despachos y cumplir las exigencias del comercio internacional.</p>
     </div>
     <div class="services-grid">
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V10l6-5 6 5v11M10 21v-5h4v5"/></svg></div><h3>Consultoría Jurídica Empresarial</h3><p>Asesoramiento legal estratégico para la constitución, reestructuración y operación diaria de sociedades comerciales.</p></article>
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Protección Legal de Activos</h3><p>Estructuras jurídicas sólidas para resguardar el patrimonio corporativo y mitigar riesgos operativos.</p></article>
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h3>Cumplimiento Normativo y Compliance</h3><p>Auditoría y adecuación de procesos internos para asegurar el cumplimiento de regulaciones locales e internacionales.</p></article>
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h3>Asesoramiento en Inversiones Corporativas</h3><p>Soporte legal y debida diligencia (Due Diligence) en procesos de adquisición, fusión y expansión de capitales.</p></article>
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div><h3>Gestión de Riesgos Contractuales</h3><p>Redacción, revisión y negociación de contratos complejos para blindar las relaciones con socios, proveedores y clientes.</p></article>
-      <article class="card" style="background:var(--darker);border:0"><div class="ico" style="background:rgba(199,154,74,.18)"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013 5.18 2 2 0 015 3h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L9 11a16 16 0 006 6l1.36-1.25a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div><h3 style="color:#fff">¿Necesitas asesoría legal?</h3><p style="color:rgba(255,255,255,.8)">Agenda una consulta confidencial con nuestros especialistas y protege lo que más valoras.</p><a href="#contacto" class="btn btn-primary" style="margin-top:14px">Agenda tu cita</a></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8h14v13M8 12h3M13 12h3M8 16h3M13 16h3"/></svg></div><h3>Infraestructura logística modular</h3><p>Centros de acopio, naves temporales y almacenamiento de alta densidad cerca de puertos, aeropuertos y zonas francas.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></div><h3>Flotas y contenedores especializados</h3><p>Transporte interno, plataformas de carga y contenedores con especificaciones avanzadas, incluido control de temperatura reefer.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V8h12v12M9 8V4h6v4M9 12h6M9 16h6"/></svg></div><h3>Procesamiento y líneas de empaque</h3><p>Tecnología para clasificación, sellado, empaquetado automatizado y preparación de productos con estándares de exportación.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H4zM8 21h8M12 17v4M8 9h2M8 13h8"/></svg></div><h3>Trazabilidad y tecnología de cadena</h3><p>Lectores industriales, terminales de radiofrecuencia y equipos de escaneo para inventario y control de flujo en tiempo real.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L5 14h7l-1 8 8-12h-7z"/></svg></div><h3>Energía y respaldo operativo</h3><p>Generación eléctrica, plantas de emergencia y respaldo industrial para proteger cadenas de frío y líneas de producción.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 18h12M6 18V8h8v10M14 10h4l2 3v5h-4M8 8V5h4v3"/><circle cx="8" cy="20" r="2"/><circle cx="18" cy="20" r="2"/></svg></div><h3>Maniobra y carga pesada</h3><p>Montacargas de gran tonelaje, grúas industriales y equipos para agilizar patios de maniobra y carga de contenedores.</p></article>
     </div>
   </div>
 </section>
@@ -278,39 +280,39 @@ footer ul a:hover{color:var(--accent)}
 <section class="why" id="nosotros">
   <div class="container why-grid">
     <div>
-      <span class="eyebrow">Nosotros</span>
-      <h2>¿Por qué somos tu mejor opción?</h2>
-      <p class="lead">En Arriendo Corp combinamos rigor jurídico y visión estratégica para blindar tu empresa, anticipar riesgos y proteger tu patrimonio a largo plazo.</p>
-      <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div><div><h4>Blindaje patrimonial</h4><p>Estructuras legales que protegen tus activos corporativos.</p></div></div>
-      <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div><h4>Cumplimiento garantizado</h4><p>Compliance que evita sanciones y fortalece tu reputación.</p></div></div>
-      <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><div><h4>Visión de inversión</h4><p>Due diligence para decisiones de capital seguras.</p></div></div>
+      <span class="eyebrow">Ventaja operativa</span>
+      <h2>Crece al ritmo de tus mercados internacionales</h2>
+      <p class="lead">Convertimos inversiones iniciales elevadas en gastos operativos flexibles para que puedas responder a nuevos pedidos sin frenar tu liquidez.</p>
+      <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><div><h4>Protección del flujo de caja</h4><p>Accede a activos críticos sin descapitalizar la operación.</p></div></div>
+      <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg></div><div><h4>Respuesta rápida</h4><p>Despliega capacidad crítica en semanas, no en meses.</p></div></div>
+      <div class="feat"><div class="fi"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-7M22 18V2"/></svg></div><div><h4>Flexibilidad estacional</h4><p>Ajusta infraestructura y equipos a cada pico de demanda.</p></div></div>
     </div>
     <div class="why-card">
-      <div class="big">+14</div>
-      <div class="big-l">años protegiendo y estructurando el patrimonio de empresas y socios</div>
-      <div class="bar-row"><span>Casos resueltos con éxito <b>97%</b></span><div class="bar"><i style="width:97%"></i></div></div>
-      <div class="bar-row"><span>Riesgos mitigados <b>94%</b></span><div class="bar"><i style="width:94%"></i></div></div>
-      <div class="bar-row"><span>Satisfacción del cliente <b>95%</b></span><div class="bar"><i style="width:99%"></i></div></div>
+      <div class="big">OpEx</div>
+      <div class="big-l">una estructura financiera más flexible para ampliar capacidad exportadora</div>
+      <div class="bar-row"><span>Liquidez preservada <b>Capital disponible</b></span><div class="bar"><i style="width:92%"></i></div></div>
+      <div class="bar-row"><span>Capacidad adaptable <b>Escala modular</b></span><div class="bar"><i style="width:88%"></i></div></div>
+      <div class="bar-row"><span>Continuidad operativa <b>Menos interrupciones</b></span><div class="bar"><i style="width:95%"></i></div></div>
     </div>
   </div>
 </section>
 
-<section class="testimonials">
+<section class="testimonials" id="sectores">
   <div class="container">
-    <div class="sec-head"><span class="eyebrow">Testimonios</span><h2>Lo que dicen nuestros clientes</h2></div>
+    <div class="sec-head"><span class="eyebrow">Clientes objetivo</span><h2>Soluciones para operaciones que compiten globalmente</h2><p>Atendemos organizaciones con necesidades intensivas de infraestructura, logística y tecnología.</p></div>
     <div class="tst-grid">
-      <article class="tst"><div class="q">”</div><div class="stars">★★★★★</div><p>Estructuraron mi sociedad y blindaron todos los contratos. Hoy opero con total seguridad jurídica.</p><div class="who"><div class="av">RB</div><div><b>Roberto Bravo</b><small>Director, Grupo Corporativo</small></div></div></article>
-      <article class="tst"><div class="q">”</div><div class="stars">★★★★★</div><p>Su área de compliance nos ahorró sanciones importantes. Profesionalismo y rigor de primer nivel.</p><div class="who"><div class="av">PA</div><div><b>Patricia Aguilar</b><small>Gerente Legal</small></div></div></article>
-      <article class="tst"><div class="q">”</div><div class="stars">★★★★★</div><p>El due diligence que realizaron antes de una adquisición nos dio claridad total. Muy recomendados.</p><div class="who"><div class="av">FM</div><div><b>Fernando Mora</b><small>Inversionista</small></div></div></article>
+      <article class="tst"><div class="stars">AGROEXPORTACIÓN</div><h3>Agroindustria exportadora</h3><p>Capacidad para acopio, cadena de frío, empaque y trazabilidad durante campañas y picos estacionales.</p></article>
+      <article class="tst"><div class="stars">PRODUCCIÓN</div><h3>Manufactura a gran escala</h3><p>Maquinaria, energía de respaldo y equipos de maniobra para sostener volúmenes y estándares internacionales.</p></article>
+      <article class="tst"><div class="stars">COMERCIO EXTERIOR</div><h3>Logística internacional</h3><p>Infraestructura, flotas y contenedores especializados para acelerar consolidación y despacho de carga.</p></article>
     </div>
   </div>
 </section>
 
 <section class="cta-banner">
   <div class="container">
-    <h2>Tu patrimonio es nuestra prioridad</h2>
-    <p>Protege, estructura y optimiza tus activos con el respaldo de un equipo jurídico estratégico. Agenda una consulta confidencial.</p>
-    <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+    <h2>Expande tu capacidad sin frenar tu liquidez</h2>
+    <p>Cuéntanos tu necesidad operativa y diseñaremos una solución de arrendamiento alineada con tus volúmenes, plazos y mercados.</p>
+    <a href="#contacto" class="btn btn-primary">Solicita una propuesta</a>
   </div>
 </section>
 
@@ -318,15 +320,15 @@ footer ul a:hover{color:var(--accent)}
   <div class="container contact-grid">
     <div class="contact-info">
       <span class="eyebrow">Contáctanos</span>
-      <h2>Hablemos de tu empresa</h2>
-      <p>Cuéntanos tu situación y agenda una consulta confidencial con nuestros especialistas. Te respondemos en menos de 24 horas.</p>
+      <h2>Hablemos de tu próxima operación</h2>
+      <p>Indícanos qué infraestructura o equipamiento necesitas, en qué ubicación y por cuánto tiempo. Nuestro equipo evaluará la mejor alternativa de arrendamiento.</p>
       <div class="cinfo"><div class="ci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><b>Ubicación</b><span>Atención presencial y remota</span></div></div>
     </div>
     <form onsubmit="event.preventDefault();this.reset();alert('¡Gracias! Te contactaremos muy pronto.');">
       <label>Nombre completo</label><input type="text" placeholder="Tu nombre" required>
       <label>Correo electrónico</label><input type="email" placeholder="tucorreo@empresa.com" required>
-      <label>¿En qué podemos ayudarte?</label><textarea rows="4" placeholder="Describe brevemente tu consulta legal"></textarea>
-      <button class="btn btn-primary" type="submit">Solicitar mi cita</button>
+      <label>¿Qué capacidad necesitas?</label><textarea rows="4" placeholder="Describe el equipo, infraestructura, ubicación y plazo estimado"></textarea>
+      <button class="btn btn-primary" type="submit">Solicitar propuesta</button>
     </form>
   </div>
 </section>
@@ -335,14 +337,14 @@ footer ul a:hover{color:var(--accent)}
   <div class="container foot-grid">
     <div class="foot-brand">
       <div class="fb-name">Arriendo Corp</div>
-      <p>Consultoría jurídica integral para la protección, estructuración y optimización de activos corporativos y patrimoniales.</p>
+      <p>Infraestructura pesada, equipamiento logístico y tecnología bajo arrendamiento para empresas exportadoras.</p>
       
     </div>
     <div><h5>Servicios</h5><ul>
-      <li><a href="#servicios">Consultoría Empresarial</a></li>
-      <li><a href="#servicios">Protección de Activos</a></li>
-      <li><a href="#servicios">Compliance</a></li>
-      <li><a href="#servicios">Contratos</a></li>
+      <li><a href="#servicios">Infraestructura logística</a></li>
+      <li><a href="#servicios">Flotas y contenedores</a></li>
+      <li><a href="#servicios">Maquinaria y empaque</a></li>
+      <li><a href="#servicios">Energía y carga pesada</a></li>
     </ul></div>
     <div><h5>Legal</h5><ul>
       <li><a href="politica-privacidad.html">Políticas de privacidad</a></li>
@@ -355,16 +357,13 @@ footer ul a:hover{color:var(--accent)}
       <div class="socials"><a href="https://www.facebook.com/arriendocorp/" aria-label="Facebook" target="_blank"><svg viewBox="0 0 24 24"><path d="M13 22v-8h3l.5-3H13V9c0-.9.3-1.5 1.6-1.5H17V5c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4V11H8v3h2.6v8z"/></svg></a></div>
     </div>
   </div>
-  <div class="copy"><span>© 2026 Arriendo Corp · Soluciones Legales.</span> <span>Todos los derechos reservados.</span></div>
+  <div class="copy"><span>© 2026 Arriendo Corp · Exportaciones.</span> <span>Todos los derechos reservados.</span></div>
 </footer>
 
 <script>
 const burger=document.getElementById('burger'),menu=document.getElementById('menu');
 burger.addEventListener('click',()=>menu.classList.toggle('open'));
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
-const counters=document.querySelectorAll('.num[data-count]');
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=+el.dataset.count;let n=0;const step=Math.ceil(t/60);const tick=()=>{n+=step;if(n>=t){el.textContent='+'+t;}else{el.textContent='+'+n;requestAnimationFrame(tick);}};tick();io.unobserve(el);}})},{threshold:.5});
-counters.forEach(c=>io.observe(c));
 </script>
 </body>
 </html>
